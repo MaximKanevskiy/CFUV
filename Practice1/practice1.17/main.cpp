@@ -1,50 +1,44 @@
 #include <iostream>
 using namespace std;
 
-int arrayLength;
-int* blocks;
-int waterBlocks = 0;
-
-void calculateResidualWater(int height)
+int calculateResidualWater(int arrayLength, int blockLevels[])
 {
-	int temp = -1;
-	for (int i = 0; i < arrayLength; i++)
-	{
-		if (blocks[i] >= height)
-		{
-			if (temp != -1)
-			{
-				waterBlocks += temp;
-			}
-			temp = 0;
-		}
-		else if (temp != -1) 
-		{
-			temp++;
-		}
-	}
+    int water = 0;
+    int level = 0;
+    int left = 0;
+    int right = arrayLength - 1;
+
+    while (left < right)
+    {
+        if (blockLevels[left] < blockLevels[right])
+        {
+            level = max(blockLevels[left], level);
+            water += level - blockLevels[left];
+            left++;
+        }
+        else
+        {
+            level = max(blockLevels[right], level);
+            water += level - blockLevels[right];
+            right--;
+        }
+    }
+
+    return water;
 }
 
 int main()
 {
-	int max = 0;
+    int arrayLength;
+    cin >> arrayLength;
+    int *blockLevels = new int[arrayLength];
+    
+    for (int i = 0; i < arrayLength; i++)
+    {
+        cin >> blockLevels[i];
+    }
 
-	cin >> arrayLength;
-	blocks = new int[arrayLength];
-	for (int i = 0; i < arrayLength; i++)
-	{
-		cin >> blocks[i];
-		if (blocks[i] > max)
-		{
-			max = blocks[i];
-		}
-	}
+    cout << calculateResidualWater(arrayLength, blockLevels) << endl;
 
-	int height = 2;
-	while (height < max + 1)
-	{
-		calculateResidualWater(height);
-		height++;
-	}
-	cout << waterBlocks;
+    delete[] blockLevels;
 }
