@@ -1,7 +1,7 @@
 Complex make_complex(std::string number)
 {
-	unsigned long long biggest_number = 18446744073709551615;
-	while (number.find(' ') != biggest_number)
+    unsigned long long biggest_number = 18446744073709551615;
+    while (number.find(' ') != biggest_number)
     {
         number.replace(number.find(' '), 1, "");
     }
