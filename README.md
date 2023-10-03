@@ -7,3 +7,4 @@
 ### README файлы:
 - [Практика №1](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_01/README.md)
 - [Практика №2](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_02/README.md)
+- [Практика №3](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_03/README.md)
