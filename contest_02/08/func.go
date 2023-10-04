@@ -1,3 +1,5 @@
+import "strings"
+
 func isPalindrome(line string) bool {
 	line = strings.ToLower(line)
 	var firstLowerLetter int = 'a'
