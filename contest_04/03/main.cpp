@@ -1,9 +1,9 @@
 #include <iostream>
 #include <fstream>
-#include <string>
-#include <map>
-#include <vector>
-#include <algorithm>
+#include<string>
+#include<map>
+#include<vector>
+#include<algorithm>
 
 bool comp(std::map<int, std::string> a, std::map<int, std::string> b)
 {
@@ -30,7 +30,7 @@ std::map<int, std::string> parseLine(std::string line)
     {
         if (character == ',')
         {
-            if (inQuites or escapeQuote) // Если находимся в кавычках, и не экранированная запятая
+            if (inQuites || escapeQuote) // Если находимся в кавычках, и не экранированная запятая
             {
                 output[key] = buffer; // Записываем значение элемента в словарь
                 buffer = ""; // Очищаем буфер
@@ -41,12 +41,12 @@ std::map<int, std::string> parseLine(std::string line)
                 buffer += character;
             }
         }
-        else if (character == '\"' and inQuites) // Если символ - кавычка, и мы находимся в кавычках
+        else if (character == '\"' && inQuites) // Если символ - кавычка, и мы находимся в кавычках
         {
             inQuites = false; // Выходим из кавычек
         }
         // Если символ - кавычка, и предыдущий символ был экранированной кавычкой
-        else if (character == '\"' and escapeQuote)
+        else if (character == '\"' && escapeQuote)
         {
             buffer += "\"";
             escapeQuote = false;
@@ -87,14 +87,14 @@ int main()
         std::map<int, std::string> buf_map = parseLine(line);
 
         // Пропускаем записи, в которых отсутствуют значения полей
-        if (buf_map[4] == "" or buf_map[2] == "" or buf_map[5] == "") 
+        if (buf_map[4] == "" || buf_map[2] == "" || buf_map[5] == "") 
         {
             continue;
         }
 
         // Добавляем запись, если поле пола - "female", класс пассажира соответствует вводу 
         // и возраст больше введенного значения
-        if (buf_map[4] == "female" and pcclass == std::stoi(buf_map[2]) and std::stoi(buf_map[5]) > age) 
+        if (buf_map[4] == "female" && pcclass == std::stoi(buf_map[2]) && std::stoi(buf_map[5]) > age) 
         {
             data.push_back(buf_map);
         }
