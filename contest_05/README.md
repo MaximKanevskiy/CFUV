@@ -6,4 +6,5 @@ https://contest.yandex.ru/contest/55465/problems/
 | --- | --- | --- |
 | [2. Класс. Чайник](https://contest.yandex.ru/contest/55465/problems/2/) | [classes.cpp](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_05/02/classes.cpp) | [<img src="https://github.com/MaximKanevskiy/CFUV/blob/main/img/cpp.png" width="40"/>]() |
 | [4. Класс. Point](https://contest.yandex.ru/contest/55465/problems/4/) | [class.cpp](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_05/04/class.cpp) | [<img src="https://github.com/MaximKanevskiy/CFUV/blob/main/img/cpp.png" width="40"/>]() |
-| [6. Get a cat](https://contest.yandex.ru/contest/55465/problems/6/) | [structs.go](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_05/06/structs.go)| [<img src="https://github.com/MaximKanevskiy/CFUV/blob/main/img/go.jpg" width="40"/>]() |
+| [6. Get a cat](https://contest.yandex.ru/contest/55465/problems/6/) | [structs.go](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_05/06/structs.go) | [<img src="https://github.com/MaximKanevskiy/CFUV/blob/main/img/go.jpg" width="40"/>]() |
+| [7. Класс. Чайник](https://contest.yandex.ru/contest/55465/problems/7/) | [structs.go](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_05/07/structs.go) | [<img src="https://github.com/MaximKanevskiy/CFUV/blob/main/img/go.jpg" width="40"/>]() |
