@@ -10,3 +10,4 @@
 - [Практика №3](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_03/README.md)
 - [Практика №4](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_04/README.md)
 - [Практика №5](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_05/README.md)
+- [Практика №6](https://github.com/MaximKanevskiy/CFUV/blob/main/contest_06/README.md)
